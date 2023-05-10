@@ -1,0 +1,29 @@
+POST http://localhost:5000/api/auth/register
+Content-Type: application/json
+
+{
+     "username":"Nam",
+     "password":"Nam"
+}
+
+###
+POST http://localhost:5000/api/auth/login
+Content-Type: application/json
+
+{
+     "username":"Vinh",
+     "password":"Vinh"
+}
+
+###
+POST http://localhost:5000/api/posts
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2MzQzMDZiNmM0MzYwZTAxYTY2ZWYwODMiLCJpYXQiOjE2NjcxMzIxNDl9.I7FmN4XFw8U2kdlyMCFfvc8V3atx2FkA8IxBPR32aZU
+
+{
+     "title":"NodeJs",
+     "description":"NodeJs",
+     "url":"NodeJs.com",
+     "status":"LEARNED"
+}
+
